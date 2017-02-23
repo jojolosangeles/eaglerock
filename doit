@@ -1,0 +1,8 @@
+set -x
+rm working/*
+head -3 data/Building_and_Safety_Permit_Information.csv > working/Building_and_Safety_Permit_Information.3_lines
+ruby generateCSV_variable_names.rb working/Building_and_Safety_Permit_Information.3_lines > working/Building_and_Safety_Permit_Information.variable_names
+head -1 data/Building_and_Safety_Permit_Information.csv > working/Building_and_Safety_Permit_Information.filtered.csv
+egrep -h "90041|90042|90065" data/Building_and_Safety_Permit_Information.csv >> working/Building_and_Safety_Permit_Information.filtered.csv
+ruby generateMarkerInfo.rb working/Building_and_Safety_Permit_Information.filtered.csv latitude_longitude templates/MARKER_Title.erb issue_date 1/1/2017 > working/Building_and_Safety_Permit_Information.marker_info
+ruby generateHTML.rb templates/permits.erb working/Building_and_Safety_Permit_Information.marker_info > results/Building_and_Safety_Permit_Information.html

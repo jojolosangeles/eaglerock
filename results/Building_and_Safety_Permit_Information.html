@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Permits</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAO1ECxy0DRmv5EOvx2FqD6fBFCVLOnp7w"></script>
+    <script>
+
+      var items = [ // there are 19 mapItems in the list
+          
+{lat:34.10944,lng:-118.19275,text: "01/05/2017,INTERIOR TENANT IMPROVEMENT CHANGE OF USE FROM  \"RETAIL\" TO \"RESTAURAN" },
+          
+{lat:34.12081,lng:-118.17447,text: "01/03/2017,CONVERT 15'X15' PORTION OF (E) 1ST FLOOR AREA TO STORAGE,  LAUNDRY, HA" },
+          
+{lat:34.09139,lng:-118.21896,text: "01/03/2017,RE-ROOF 20  SQUARES WITH CLASS A OR B MATERIAL WEIGHING LESS THAN 6 PO" },
+          
+{lat:34.12458,lng:-118.23381,text: "01/05/2017,2ND FLOOR ADDITION OF 11'-8\" x 14'-11\" WITHIN (E) \"OPEN-TO-CEILING\" AR" },
+          
+{lat:34.11071,lng:-118.22448,text: "01/03/2017,Add sill plate anchors bolts and cripple wall plywood per L.A. City St" },
+          
+{lat:34.1119,lng:-118.23367,text: "01/04/2017,Add sill plate anchor bolts and plywood to cripple walls (if existing)" },
+          
+{lat:34.11633,lng:-118.21592,text: "01/04/2017,INTERIOR AND EXTERIOR REMODEL TO (E) SINGLE FAMILY DWELLING.  REMODEL" },
+          
+{lat:34.10725,lng:-118.19123,text: "01/05/2017,POTABLE WATER REPIPE FOR EXISTING APARTMENT BUILDING." },
+          
+{lat:34.1155,lng:-118.20846,text: "01/04/2017,Supplemental permit to: 15016-10000-06780.  Revise permit work descrip" },
+          
+{lat:34.10944,lng:-118.19275,text: "01/05/2017,INSTALLATION OF (1) TYPE I HOOD AND MAKE UP AIR UNIT IN EXISTING COMME" },
+          
+{lat:34.09386,lng:-118.21016,text: "01/04/2017,Supplemental to permit # 16016-10000-29449 to revise scope to include" },
+          
+{lat:34.13313,lng:-118.21517,text: "01/04/2017,ADD 5'-6\" x 27'-4\" TO EXPAND KITCHEN & LIVING ROOM AND KITCHEN REMODEL" },
+          
+{lat:34.10501,lng:-118.19213,text: "01/05/2017,supplemental to permit no. 16020-10000-03693 to correct the work descr" },
+          
+{lat:34.12576,lng:-118.18366,text: "01/04/2017,Grading excavation for a 6 ft. high cut." },
+          
+{lat:34.14418,lng:-118.22436,text: "01/04/2017,INSTALL NEW  ROOF MOUNTED SYSTEM 4.275 KW SOLAR ARRAY ON A SINGLE FAMI" },
+          
+{lat:34.09639,lng:-118.21162,text: "01/03/2017,INSTALL REMEDIAL GRADING REPAIR W/ BOARD AND PIPES PER APPROVAL LETTER" },
+          
+{lat:34.14356,lng:-118.20299,text: "01/04/2017,Water damage, termite damage/ dry rot repair less than 10% of replacem" },
+          
+{lat:34.14197,lng:-118.19267,text: "01/03/2017,Replace damaged wood framing (less than 10%). Same size, spacing, type" },
+          
+{lat:34.12576,lng:-118.18366,text: "01/04/2017,New retaining wall 3'6\" above ( e ) naturasl grade and 41' total lengt"}
+      ];
+      // In this example, we center the map, and add a marker, using a LatLng object
+      // literal instead of a google.maps.LatLng object. LatLng object literals are
+      // a convenient way to add a LatLng coordinate and, in most cases, can be used
+      // in place of a google.maps.LatLng object.
+
+      var map;
+
+      function setMarkers(map,locations) {
+        var marker, i
+
+        for (i = 0; i < locations.length; i++) {  
+          var lat = locations[i].lat
+          var long = locations[i].lng
+          var text =  locations[i].text
+
+          latlngset = new google.maps.LatLng(lat, long);
+
+          var marker = new google.maps.Marker({  
+              map: map, title: text, position: latlngset  
+          });
+          map.setCenter(marker.getPosition())
+
+          var content = text
+          var infowindow = new google.maps.InfoWindow()
+
+          google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
+              return function() {
+                infowindow.setContent(content);
+                 infowindow.open(map,marker);
+              };
+          })(marker,content,infowindow)); 
+        }
+      }
+
+      function initialize() {
+        var mapOptions = {
+          zoom: 13,
+          center: {lat: 33.98233, lng: -118.26544},
+        };
+        map = new google.maps.Map(document.getElementById('map'),
+            mapOptions);
+        setMarkers(map, items);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+</html>
