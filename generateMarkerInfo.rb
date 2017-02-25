@@ -3,10 +3,7 @@ require './config.rb'
 require "erb"
 
 def usage()
-  print "Usage: ruby generateMarkerInfo.rb <CSV File Path> \n"
-  print "                                  <variable_containing_location> \n"
-  print "                                  <MARKER Title ERB file> \n"
-  print "                                  <issue date variable> <issue date minimum>\n"
+  print "Usage: ruby generateMarkerInfo.rb CSV_Data_file location_variable Map_Marker_Title_ERB_file date_variable date_minimum\n"
 end
 
 if (ARGV.length != 5) then
@@ -17,16 +14,16 @@ end
 csvFilePath = ARGV[0]
 variableContainingLocation = ARGV[1]
 markerTitleErbFile = ARGV[2]
-issueDateVariable = ARGV[3]
-issueDateMinimum = ARGV[4]
+dateVariableName = ARGV[3]
+minimumDateBoundary = ARGV[4]
 
 config = Config.new()
-if (!config.valid_date?(issueDateMinimum)) then
+if (!config.valid_date?(minimumDateBoundary)) then
   usage()
-  print "\nissue date minimum: #{issueDateMinimum} is invalid, expecting format MM/DD/YYYY\n"
+  print "\nissue date minimum: #{minimumDateBoundary} is invalid, expecting format MM/DD/YYYY\n"
   exit
 end
-issueMinimumDate = config.to_Date(issueDateMinimum)
+minimumDate = config.to_Date(minimumDateBoundary)
 
 csvLoader = CsvLoader.new(csvFilePath)
 
@@ -53,7 +50,7 @@ def monthDayOK(issueMonth, issueDay, minMonth, minDay)
 end
 
 def dateOK(issueDate, issueMinimumDate)
-  return issueDate > issueMinimumDate
+  return issueDate >= issueMinimumDate
 end
 
 def extractLatitudeLongitude(llStr)
@@ -72,14 +69,14 @@ def extractLatitudeLongitude(llStr)
 end
 
 symbolHoldingLocation = variableContainingLocation.to_sym
-symbolHoldingIssueDate = issueDateVariable.to_sym
+symbolHoldingDate = dateVariableName.to_sym
 titleErbString = File.read(markerTitleErbFile)
 
 lineNumber = 0
 csvLoader.entries.each do |entry|
   latitude,longitude = extractLatitudeLongitude(entry[symbolHoldingLocation])
   title = Basicerb.new(entry, titleErbString).render()
-  date_string = entry[symbolHoldingIssueDate]
+  date_string = entry[symbolHoldingDate]
   if (!config.valid_date?(date_string)) then
     print "Line #{lineNumber} is invalid: #{date_string}, #{entry[symbolHoldingLocation]}\n"
   end
@@ -89,8 +86,8 @@ end
 csvLoader.entries.each do |entry|
   latitude,longitude = extractLatitudeLongitude(entry[symbolHoldingLocation])
   title = Basicerb.new(entry, titleErbString).render()
-  date_string = entry[symbolHoldingIssueDate]
-  if (config.valid_date?(date_string) && dateOK(config.to_Date(date_string), issueMinimumDate) && (title.length > 3) && (latitude != 0) && (longitude != 0)) then
+  date_string = entry[symbolHoldingDate]
+  if (config.valid_date?(date_string) && dateOK(config.to_Date(date_string), minimumDate) && (title.length > 3) && (latitude != 0) && (longitude != 0)) then
     print "#{latitude},#{longitude},#{date_string},#{title}\n"
   end
 end
