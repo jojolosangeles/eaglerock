@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LA Crime</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      #map {
+        height: 100%;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRKT6f82edZ3HhL-wlEq8Zx5DUAZnk3n8"></script>
+    <script>
+
+      var items = [ // there are 16 mapItems in the list
+          
+{lat:34.1428,lng:-118.226,text: "12/02/2016, SHOPLIFTING - PETTY THEFT ($950 & UNDER)" },
+          
+{lat:34.1258,lng:-118.1816,text: "12/02/2016, VEHICLE - STOLEN" },
+          
+{lat:34.1219,lng:-118.2138,text: "12/02/2016, VEHICLE - STOLEN" },
+          
+{lat:34.1099,lng:-118.1923,text: "12/01/2016, VANDALISM - FELONY ($400 & OVER, ALL CHURCH VANDALISMS)" },
+          
+{lat:34.115,lng:-118.2059,text: "12/03/2016, VEHICLE - STOLEN" },
+          
+{lat:34.1244,lng:-118.1795,text: "12/02/2016, BURGLARY FROM VEHICLE" },
+          
+{lat:34.1131,lng:-118.2051,text: "12/03/2016, VIOLATION OF COURT ORDER" },
+          
+{lat:34.11,lng:-118.195,text: "12/01/2016, BURGLARY FROM VEHICLE" },
+          
+{lat:34.1059,lng:-118.2034,text: "12/03/2016, THEFT FROM MOTOR VEHICLE - PETTY ($950 & UNDER)" },
+          
+{lat:34.1381,lng:-118.2115,text: "12/03/2016, VEHICLE - STOLEN" },
+          
+{lat:34.1258,lng:-118.1816,text: "12/02/2016, VEHICLE - STOLEN" },
+          
+{lat:34.1379,lng:-118.2196,text: "12/02/2016, VANDALISM - MISDEAMEANOR ($399 OR UNDER)" },
+          
+{lat:34.1393,lng:-118.2088,text: "12/03/2016, BURGLARY" },
+          
+{lat:34.1422,lng:-118.223,text: "12/03/2016, SHOPLIFTING - PETTY THEFT ($950 & UNDER)" },
+          
+{lat:34.1083,lng:-118.1908,text: "12/03/2016, BATTERY - SIMPLE ASSAULT" },
+          
+{lat:34.1275,lng:-118.1872,text: "12/01/2016, BATTERY - SIMPLE ASSAULT"}
+      ];
+      var map;
+
+      function setMarkers(map,locations) {
+        var marker, i
+
+        for (i = 0; i < locations.length; i++) {  
+          var lat = locations[i].lat
+          var long = locations[i].lng
+          var text =  locations[i].text
+
+          latlngset = new google.maps.LatLng(lat, long);
+
+          var marker = new google.maps.Marker({  
+              map: map, title: text, position: latlngset  
+          });
+          map.setCenter(marker.getPosition())
+
+          var content = text
+          var infowindow = new google.maps.InfoWindow()
+
+          google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
+              return function() {
+                infowindow.setContent(content);
+                 infowindow.open(map,marker);
+              };
+          })(marker,content,infowindow)); 
+        }
+      }
+
+      function initialize() {
+        var mapOptions = {
+          zoom: 13,
+          center: {lat: 33.98233, lng: -118.26544},
+        };
+        map = new google.maps.Map(document.getElementById('map'),
+            mapOptions);
+        setMarkers(map, items);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+</html>

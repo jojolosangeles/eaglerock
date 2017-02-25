@@ -36,12 +36,17 @@ def addSlashes(s)
   return s.gsub("\"", "\\\"")
 end
 
+def stripTime(s)
+  data = s.split
+  return data[0]
+end
+
 @mapItems = []
 lines = File.open(markerInfoFile, "r").readlines
 lines.each do |line|
   line.chomp!
-  data = line.split(",", 3)
-  @mapItems << Item.new(data[0], data[1], addSlashes(data[2]))
+  data = line.split(",", 4)
+  @mapItems << Item.new(data[0], data[1], "#{stripTime(data[2])}, #{addSlashes(data[3])}")
 end
 
 erbTemplate = File.open(erbTemplateFile).read

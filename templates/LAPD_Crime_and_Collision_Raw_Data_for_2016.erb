@@ -5,12 +5,9 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
       #map {
         height: 100%;
       }
-      /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
         margin: 0;
@@ -28,11 +25,6 @@
           item = @mapItems[0] %>
 {lat:<%= item.lat %>,lng:<%= item.lng %>,text: "<%= item.text %>"}
       ];
-      // In this example, we center the map, and add a marker, using a LatLng object
-      // literal instead of a google.maps.LatLng object. LatLng object literals are
-      // a convenient way to add a LatLng coordinate and, in most cases, can be used
-      // in place of a google.maps.LatLng object.
-
       var map;
 
       function setMarkers(map,locations) {

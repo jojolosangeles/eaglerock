@@ -41,18 +41,19 @@ variable_name_N
 2. Generate "Map_Marker" Location/Text based on CSV file column variables:
 ```
 ruby generateMarkerInfo.rb CSV_file VARIABLE_LIST_file variable_containing_location Marker_Info_ERB_template
-                           \<CSV Variable List File Path>
-                           \<variable_containing_location>
-                           \<"Map_Marker" Title Format String>
-        > \<"Map_Marker" Info File Path>
+        > MAP_MARKER_INFO_file
 ```
-This extracts "Map_Marker" Location and Title from each CSV line, and outputs:
+This extracts MAP_MARKER Location and Title from each CSV line, and outputs:
 ```
 <latitude>,<longitude>,<title>
 ```
-3. Convert the **_Set of "Map_Marker" Latitude/Longitude_** into a **MAP Bounds** with a HUMAN input **MAP Margin**
+3. Filter the data by city
 ```
-ruby generateMapBounds.rb MAP_MARKER_INFO_file MAP_MARGIN > MARGIN_BOUNDARIES_file
+ruby filterLocationByCity CITY_NAME 
+```
+4. Convert the **MAP_MARKER_INFO_file** into a **MAP_BOUNDARY_file**
+```
+ruby generateMapBounds.rb MAP_MARKER_INFO_file MAP_MARGIN > MAP_BOUNDARY_file
 ```       
 The output file contains 2 locations, upper left and lower right:
 ```

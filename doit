@@ -11,33 +11,30 @@ rm results/*
 . ./keys/setup
 
 # 2. Create a variable name for each CSV column heading
+# Permit Data
 head -3 data/Building_and_Safety_Permit_Information.csv > working/Building_and_Safety_Permit_Information.3_lines
 ruby generateCSV_variable_names.rb working/Building_and_Safety_Permit_Information.3_lines > working/Building_and_Safety_Permit_Information.variable_names
-
-# some filtering specific to this data source, here filtering based on zip code
-head -1 data/Building_and_Safety_Permit_Information.csv > working/Building_and_Safety_Permit_Information.filtered.csv
-egrep -h "90041|90042|90065" data/Building_and_Safety_Permit_Information.csv >> working/Building_and_Safety_Permit_Information.filtered.csv
-
-# 3. Identify "Map_Marker" Location/Text in terms of CSV column variables
-ruby generateMarkerInfo.rb working/Building_and_Safety_Permit_Information.filtered.csv latitude_longitude templates/Building_and_Safety_Permit_Information.Marker_Title.erb issue_date 1/1/2017 > working/Building_and_Safety_Permit_Information.marker_info
-ruby generateText.rb templates/Building_and_Safety_Permit_Information.erb working/Building_and_Safety_Permit_Information.marker_info > results/Building_and_Safety_Permit_Information.html
 
 # Crime Data
 head -3 data/LAPD_Crime_and_Collision_Raw_Data_for_2016.csv > working/LAPD_Crime_and_Collision_Raw_Data_for_2016.3_lines
 ruby generateCSV_variable_names.rb working/LAPD_Crime_and_Collision_Raw_Data_for_2016.3_lines > working/LAPD_Crime_and_Collision_Raw_Data_for_2016.variable_names
 
-# generate the Map Markers for this data
-# generateMarkerInfo.rb CSV_Data_File variable_containing_location Marker_Title_ERB_File variable_containing_issue_date Issue_Date_Minimum_ \n"
-#
-# NOT YET IMPLEMENTED:  ruby limitDataByLocation.rb BOUNDARY_file CSV_file location_variable_name > working/LAPD_Crime_and_Collision_Raw_Data_for_2016.csv
-#                       ruby generateMarkerInfo.rb working/LAPD_Crime_and_Collision_Raw_Data_for_2016.csv .... (directory changed to 'working')
-ruby generateMarkerInfo.rb data/LAPD_Crime_and_Collision_Raw_Data_for_2016.csv location_1 templates/LAPD_Crime_and_Collision_Raw_Data_for_2016.Marker_Title.erb date_occ 9/1/2016 > working/LAPD_Crime_and_Collision_Raw_Data_for_2016.marker_info
+# data source specific filtering, here filtering Building_and_Safety_Permit_Information.csv by zip code
+head -1 data/Building_and_Safety_Permit_Information.csv > working/Building_and_Safety_Permit_Information.filtered.csv
+egrep -h "90041|90042|90065" data/Building_and_Safety_Permit_Information.csv >> working/Building_and_Safety_Permit_Information.filtered.csv
 
-# 4. Convert the 'Set of "Map_Marker" Latitude/Longitude' into a 'MAP Bounds' with a Configurable 'MAP Margin'
-#
-#    *** 'generateMapBounds.rb' NOT implemented!
-#    ruby generateMapBounds.rb
+# 3. Filter by city location (specified in "config/cities.cfg")
+head -1 working/Building_and_Safety_Permit_Information.filtered.csv > working/Building_and_Safety_Permit_Information.eagle_rock.csv
+ruby filterLocationByCity.rb "Eagle Rock" working/Building_and_Safety_Permit_Information.filtered.csv latitude_longitude >> working/Building_and_Safety_Permit_Information.eagle_rock.csv
+head -1 data/LAPD_Crime_and_Collision_Raw_Data_for_2016.csv > working/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.csv
+ruby filterLocationByCity.rb "Eagle Rock" data/LAPD_Crime_and_Collision_Raw_Data_for_2016.csv location_1 >> working/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.csv
+
+# 4. Generate a list of MAP_MARKER Location and Text
+ruby generateMarkerInfo.rb working/Building_and_Safety_Permit_Information.eagle_rock.csv latitude_longitude templates/Building_and_Safety_Permit_Information.Marker_Title.erb issue_date 1/1/2017 > working/Building_and_Safety_Permit_Information.eagle_rock.marker_info
+ruby generateMarkerInfo.rb working/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.csv location_1 templates/LAPD_Crime_and_Collision_Raw_Data_for_2016.Marker_Title.erb date_occ 12/1/2016 > working/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.marker_info
+
 #
 # 5. Create Template-specific String variables, using _map_bounds, _center, _markers and
 #    combine to create static HTML for Google Map display with markers.  Generate the static HTML.
-ruby generateText.rb templates/LAPD_Crime_and_Collision_Raw_Data_for_2016.erb working/LAPD_Crime_and_Collision_Raw_Data_for_2016.marker_info > results/LAPD_Crime_and_Collision_Raw_Data_for_2016.html
+ruby generateText.rb templates/Building_and_Safety_Permit_Information.erb working/Building_and_Safety_Permit_Information.eagle_rock.marker_info > results/Building_and_Safety_Permit_Information.eagle_rock.html
+ruby generateText.rb templates/LAPD_Crime_and_Collision_Raw_Data_for_2016.erb working/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.marker_info > results/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.html
