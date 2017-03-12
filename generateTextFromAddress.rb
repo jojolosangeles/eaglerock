@@ -1,8 +1,13 @@
 require 'erb'
 
 if ((ARGV.length != 2) || (ENV["GOOGLE_MAP_KEY"] == nil)) then
-  print "Usage: ruby generateText.rb ERB_Template_file MARKER_INFO_file\n"
+  print "Usage: ruby generateTextFromAddress.rb ERB_Template_file ADDRESS_PER_LINE_file\n"
   print "\n       Environment variable GOOGLE_MAP_KEY must be defined\n"
+  print "\n"
+  print "This generates text from template using variables:\n"
+  print "\n"
+  print "  @google_map_key\n"
+  print "  @address_list\n"
   exit
 end
 

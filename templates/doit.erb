@@ -1,42 +1,22 @@
 set -x
 #
-# Don't regenerate files unless dependencies change
+# Clear out previous runs
 #
-ruby tools/dependencyCheck.rb > dependencyCheck.sh
-#
-# Set up folder structure for the different runs
-#
-chmod +x dependencyCheck.sh
-. ./dependencyCheck.sh
-echo "GOOGLE_API_KEY=$GOOGLE_API_KEY"
-echo "SKIP_PERMITS=$SKIP_PERMITS"
+rm working/*
+rm results/*
 
 # Building and Safety Data
 
 # 1. Initialize environment variable GOOGLE_API_KEY
-if [ -z "$GOOGLE_API_KEY" ]; then
-  . ./keys/setup.sh
-fi
+. ./keys/setup
 
 # 2. Create a variable name for each CSV column heading
-# Permit Data
-if [ -z "$SKIP_PERMITS" ]; then
-    head -3 data/Building_and_Safety_Permit_Information.csv > working/Building_and_Safety_Permit_Information.3_lines
-    ruby generateCSV_variable_names.rb working/Building_and_Safety_Permit_Information.3_lines > working/Building_and_Safety_Permit_Information.variable_names
-else
-    cp today/Building_and_Safety_Permit_Information.3_lines working/Building_and_Safety_Permit_Information.3_lines
-    cp today/Building_and_Safety_Permit_Information.variable_names working/Building_and_Safety_Permit_Information.variable_names
-fi
-
-# Crime Data
-if [ -z "$SKIP_CRIMES" ]; then
-    head -3 data/LAPD_Crime_and_Collision_Raw_Data_for_2016.csv > working/LAPD_Crime_and_Collision_Raw_Data_for_2016.3_lines
-    ruby generateCSV_variable_names.rb working/LAPD_Crime_and_Collision_Raw_Data_for_2016.3_lines > working/LAPD_Crime_and_Collision_Raw_Data_for_2016.variable_names
-else
-    cp today/LAPD_Crime_and_Collision_Raw_Data_for_2016.3_lines working/LAPD_Crime_and_Collision_Raw_Data_for_2016.3_lines
-    cp today/LAPD_Crime_and_Collision_Raw_Data_for_2016.variable_names working/LAPD_Crime_and_Collision_Raw_Data_for_2016.variable_names
-fi
-
+<% @csvTitleList.each do |csvTitle[ %>
+# <%= csvTitle.Name %> Data
+head -3 data/<%= csvTitle.FileName %>.csv > working/<%= csvTitle.FileName %>.3_lines
+ruby generateCSV_variable_names.rb working/<%= csvTitle.FileName %>.3_lines > working/<%= csvTitle.FileName %>.variable_names
+./config/<%= csvTitle.FileName %>.custom.script > working/<%= csvTitle.FileName %>.filtered.csv
+<% end %>
 # data source specific filtering, here filtering Building_and_Safety_Permit_Information.csv by zip code
 head -1 data/Building_and_Safety_Permit_Information.csv > working/Building_and_Safety_Permit_Information.filtered.csv
 egrep -h "90041|90042|90065" data/Building_and_Safety_Permit_Information.csv >> working/Building_and_Safety_Permit_Information.filtered.csv
@@ -56,17 +36,10 @@ ruby generateMarkerInfo.rb working/LAPD_Crime_and_Collision_Raw_Data_for_2016.ea
 #    combine to create static HTML for Google Map display with markers.  Generate the static HTML.
 ruby generateText.rb templates/Building_and_Safety_Permit_Information.erb working/Building_and_Safety_Permit_Information.eagle_rock.marker_info > results/Building_and_Safety_Permit_Information.eagle_rock.html
 ruby generateText.rb templates/LAPD_Crime_and_Collision_Raw_Data_for_2016.erb working/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.marker_info > results/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.html
-ruby generateText.rb templates/Building_and_Safety_Permit_Information_v2.erb working/Building_and_Safety_Permit_Information.eagle_rock.marker_info > results/Building_and_Safety_Permit_Information_v2.eagle_rock.html
-ruby generateText.rb templates/LAPD_Crime_and_Collision_Raw_Data_for_2016_v2.erb working/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.marker_info > results/LAPD_Crime_and_Collision_Raw_Data_for_2016_v2.eagle_rock.html
 
 # 6. Deploy the HTML from Step #4
 # generate the index page
 cp templates/eagle_rock.erb results/eagle_rock.html
-cp templates/error.erb results/error.html
 aws s3 cp results/eagle_rock.html s3://los-angeles-city-data
-aws s3 cp results/error.html s3://los-angeles-city-data
 aws s3 cp results/Building_and_Safety_Permit_Information.eagle_rock.html s3://los-angeles-city-data/eagle_rock/Building_and_Safety_Permit_Information.eagle_rock.html
 aws s3 cp results/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.html s3://los-angeles-city-data/eagle_rock/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.html
-aws s3 cp results/Building_and_Safety_Permit_Information_v2.eagle_rock.html s3://los-angeles-city-data/eagle_rock/Building_and_Safety_Permit_Information_v2.eagle_rock.html
-aws s3 cp results/LAPD_Crime_and_Collision_Raw_Data_for_2016_v2.eagle_rock.html s3://los-angeles-city-data/eagle_rock/LAPD_Crime_and_Collision_Raw_Data_for_2016_v2.eagle_rock.html
-aws s3 website s3://los-angeles-city-data/ --index-document eagle_rock.html --error-document error.html

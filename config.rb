@@ -1,4 +1,5 @@
 require 'yaml'
+require './tools/boundingBox.rb'
 
 class Config
   def initialize()

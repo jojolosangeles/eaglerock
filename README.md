@@ -43,4 +43,9 @@ ruby generateText.rb templates/Building_and_Safety_Permit_Information.erb workin
 ruby generateText.rb templates/LAPD_Crime_and_Collision_Raw_Data_for_2016.erb working/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.marker_info > results/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.html
 ```
 # 6. Deploy the HTML from Step #4
-# NOT implemented: copy to S3 static website
+```
+cp templates/eagle_rock.erb results/eagle_rock.html
+aws s3 cp results/eagle_rock.html s3://los-angeles-city-data
+aws s3 cp results/Building_and_Safety_Permit_Information.eagle_rock.html s3://los-angeles-city-data/eagle_rock/Building_and_Safety_Permit_Information.eagle_rock.html
+aws s3 cp results/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.html s3://los-angeles-city-data/eagle_rock/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.html
+```
