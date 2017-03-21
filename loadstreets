@@ -1,0 +1,1201 @@
+set -x
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.230804&username=demo" > data/streets/eagle_rock_0x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_0x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_0x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_0x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_0x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_0x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_0x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_0x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_0x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_0x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_0x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_0x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_0x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_0x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_0x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_0x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_0x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_0x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_0x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10299&lng=-118.176694&username=demo" > data/streets/eagle_rock_0x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.230804&username=demo" > data/streets/eagle_rock_1x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_1x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_1x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_1x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_1x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_1x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_1x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_1x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_1x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_1x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_1x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_1x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_1x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_1x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_1x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_1x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_1x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_1x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_1x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10555021052632&lng=-118.176694&username=demo" > data/streets/eagle_rock_1x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.230804&username=demo" > data/streets/eagle_rock_2x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_2x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_2x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_2x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_2x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_2x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_2x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_2x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_2x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_2x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_2x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_2x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_2x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_2x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_2x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_2x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_2x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_2x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_2x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.10811042105263&lng=-118.176694&username=demo" > data/streets/eagle_rock_2x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.230804&username=demo" > data/streets/eagle_rock_3x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_3x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_3x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_3x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_3x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_3x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_3x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_3x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_3x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_3x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_3x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_3x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_3x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_3x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_3x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_3x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_3x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_3x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_3x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11067063157895&lng=-118.176694&username=demo" > data/streets/eagle_rock_3x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.230804&username=demo" > data/streets/eagle_rock_4x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_4x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_4x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_4x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_4x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_4x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_4x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_4x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_4x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_4x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_4x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_4x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_4x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_4x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_4x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_4x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_4x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_4x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_4x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11323084210526&lng=-118.176694&username=demo" > data/streets/eagle_rock_4x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.230804&username=demo" > data/streets/eagle_rock_5x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_5x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_5x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_5x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_5x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_5x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_5x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_5x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_5x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_5x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_5x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_5x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_5x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_5x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_5x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_5x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_5x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_5x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_5x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11579105263158&lng=-118.176694&username=demo" > data/streets/eagle_rock_5x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.230804&username=demo" > data/streets/eagle_rock_6x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_6x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_6x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_6x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_6x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_6x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_6x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_6x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_6x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_6x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_6x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_6x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_6x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_6x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_6x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_6x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_6x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_6x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_6x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.11835126315789&lng=-118.176694&username=demo" > data/streets/eagle_rock_6x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.230804&username=demo" > data/streets/eagle_rock_7x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_7x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_7x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_7x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_7x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_7x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_7x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_7x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_7x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_7x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_7x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_7x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_7x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_7x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_7x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_7x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_7x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_7x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_7x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12091147368421&lng=-118.176694&username=demo" > data/streets/eagle_rock_7x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.230804&username=demo" > data/streets/eagle_rock_8x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_8x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_8x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_8x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_8x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_8x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_8x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_8x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_8x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_8x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_8x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_8x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_8x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_8x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_8x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_8x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_8x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_8x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_8x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12347168421053&lng=-118.176694&username=demo" > data/streets/eagle_rock_8x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.230804&username=demo" > data/streets/eagle_rock_9x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_9x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_9x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_9x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_9x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_9x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_9x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_9x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_9x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_9x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_9x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_9x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_9x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_9x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_9x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_9x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_9x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_9x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_9x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12603189473684&lng=-118.176694&username=demo" > data/streets/eagle_rock_9x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.230804&username=demo" > data/streets/eagle_rock_10x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_10x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_10x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_10x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_10x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_10x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_10x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_10x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_10x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_10x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_10x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_10x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_10x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_10x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_10x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_10x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_10x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_10x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_10x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.12859210526316&lng=-118.176694&username=demo" > data/streets/eagle_rock_10x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.230804&username=demo" > data/streets/eagle_rock_11x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_11x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_11x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_11x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_11x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_11x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_11x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_11x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_11x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_11x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_11x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_11x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_11x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_11x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_11x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_11x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_11x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_11x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_11x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13115231578947&lng=-118.176694&username=demo" > data/streets/eagle_rock_11x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.230804&username=demo" > data/streets/eagle_rock_12x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_12x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_12x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_12x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_12x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_12x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_12x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_12x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_12x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_12x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_12x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_12x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_12x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_12x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_12x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_12x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_12x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_12x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_12x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13371252631579&lng=-118.176694&username=demo" > data/streets/eagle_rock_12x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.230804&username=demo" > data/streets/eagle_rock_13x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_13x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_13x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_13x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_13x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_13x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_13x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_13x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_13x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_13x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_13x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_13x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_13x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_13x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_13x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_13x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_13x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_13x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_13x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13627273684211&lng=-118.176694&username=demo" > data/streets/eagle_rock_13x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.230804&username=demo" > data/streets/eagle_rock_14x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_14x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_14x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_14x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_14x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_14x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_14x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_14x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_14x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_14x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_14x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_14x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_14x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_14x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_14x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_14x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_14x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_14x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_14x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.13883294736842&lng=-118.176694&username=demo" > data/streets/eagle_rock_14x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.230804&username=demo" > data/streets/eagle_rock_15x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_15x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_15x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_15x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_15x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_15x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_15x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_15x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_15x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_15x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_15x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_15x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_15x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_15x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_15x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_15x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_15x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_15x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_15x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14139315789474&lng=-118.176694&username=demo" > data/streets/eagle_rock_15x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.230804&username=demo" > data/streets/eagle_rock_16x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_16x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_16x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_16x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_16x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_16x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_16x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_16x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_16x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_16x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_16x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_16x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_16x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_16x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_16x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_16x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_16x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_16x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_16x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14395336842105&lng=-118.176694&username=demo" > data/streets/eagle_rock_16x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.230804&username=demo" > data/streets/eagle_rock_17x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_17x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_17x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_17x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_17x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_17x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_17x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_17x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_17x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_17x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_17x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_17x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_17x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_17x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_17x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_17x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_17x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_17x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_17x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14651357894737&lng=-118.176694&username=demo" > data/streets/eagle_rock_17x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.230804&username=demo" > data/streets/eagle_rock_18x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_18x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_18x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_18x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_18x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_18x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_18x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_18x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_18x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_18x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_18x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_18x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_18x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_18x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_18x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_18x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_18x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_18x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_18x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.14907378947368&lng=-118.176694&username=demo" > data/streets/eagle_rock_18x19.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.230804&username=demo" > data/streets/eagle_rock_19x0.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.22795610526316&username=demo" > data/streets/eagle_rock_19x1.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.22510821052632&username=demo" > data/streets/eagle_rock_19x2.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.22226031578948&username=demo" > data/streets/eagle_rock_19x3.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.21941242105264&username=demo" > data/streets/eagle_rock_19x4.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.21656452631579&username=demo" > data/streets/eagle_rock_19x5.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.21371663157895&username=demo" > data/streets/eagle_rock_19x6.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.2108687368421&username=demo" > data/streets/eagle_rock_19x7.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.20802084210527&username=demo" > data/streets/eagle_rock_19x8.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.20517294736842&username=demo" > data/streets/eagle_rock_19x9.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.20232505263158&username=demo" > data/streets/eagle_rock_19x10.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.19947715789473&username=demo" > data/streets/eagle_rock_19x11.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.1966292631579&username=demo" > data/streets/eagle_rock_19x12.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.19378136842106&username=demo" > data/streets/eagle_rock_19x13.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.19093347368421&username=demo" > data/streets/eagle_rock_19x14.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.18808557894737&username=demo" > data/streets/eagle_rock_19x15.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.18523768421052&username=demo" > data/streets/eagle_rock_19x16.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.18238978947369&username=demo" > data/streets/eagle_rock_19x17.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.17954189473684&username=demo" > data/streets/eagle_rock_19x18.json
+
+sleep 1
+curl "http://api.geonames.org/findNearbyStreetsJSON?lat=34.151634&lng=-118.176694&username=demo" > data/streets/eagle_rock_19x19.json
+
+sleep 1

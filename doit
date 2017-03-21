@@ -41,6 +41,13 @@ fi
 head -1 data/Building_and_Safety_Permit_Information.csv > working/Building_and_Safety_Permit_Information.filtered.csv
 egrep -h "90041|90042|90065" data/Building_and_Safety_Permit_Information.csv >> working/Building_and_Safety_Permit_Information.filtered.csv
 
+# street intersections (manual step to create input file)
+# Original source data: https://data.lacity.org/A-Livable-and-Sustainable-City/Street-Centerline/7j4e-nn4z
+#   then export as GEOJSON
+#   then manually delete everything except "Point" (i.e. keep end of file)
+#   then run this to extract to lat,long,intersection streets
+ruby xlatlon.rb data/street_intersections/street_intersetions.json > data/street_intersections.csv
+
 # 3. Filter by city location (specified in "config/cities.cfg")
 head -1 working/Building_and_Safety_Permit_Information.filtered.csv > working/Building_and_Safety_Permit_Information.eagle_rock.csv
 ruby filterLocationByCity.rb "Eagle Rock" working/Building_and_Safety_Permit_Information.filtered.csv latitude_longitude >> working/Building_and_Safety_Permit_Information.eagle_rock.csv
@@ -70,3 +77,4 @@ aws s3 cp results/LAPD_Crime_and_Collision_Raw_Data_for_2016.eagle_rock.html s3:
 aws s3 cp results/Building_and_Safety_Permit_Information_v2.eagle_rock.html s3://los-angeles-city-data/eagle_rock/Building_and_Safety_Permit_Information_v2.eagle_rock.html
 aws s3 cp results/LAPD_Crime_and_Collision_Raw_Data_for_2016_v2.eagle_rock.html s3://los-angeles-city-data/eagle_rock/LAPD_Crime_and_Collision_Raw_Data_for_2016_v2.eagle_rock.html
 aws s3 website s3://los-angeles-city-data/ --index-document eagle_rock.html --error-document error.html
+
